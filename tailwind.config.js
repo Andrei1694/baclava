@@ -15,7 +15,8 @@ export default {
       },
       margin: {
         '8': '8px',
-        '16': '16px'
+        '16': '16px',
+        '24': '24px'
       },
       height: {
         '40': '40px',
@@ -28,6 +29,9 @@ export default {
       },
       borderRadius: {
         'sm': '15px'
+      },
+      fontFamily: {
+        sans: ['Lato', 'sans-serif']
       }
     },
   },

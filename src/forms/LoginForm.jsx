@@ -2,6 +2,8 @@ import { useFormik } from "formik";
 import Button from "../components/Button";
 import Input from "../components/Input";
 import fb from "../../src/assets/fb.svg";
+import google from "../../src/assets/google.svg";
+import Divider from "../components/Divider";
 
 function LoginForm() {
   const formik = useFormik({
@@ -34,7 +36,11 @@ function LoginForm() {
         value={formik.values.password}
       />
       <Button type="submit">Get Started</Button>
-      <Button style="social" type="submit" icon={fb}>
+      <Divider className="mb-24" />
+      <Button style="social" type="submit" icon={fb} className="mb-16">
+        Continue with Facebook
+      </Button>
+      <Button style="social" type="submit" icon={google}>
         Continue with Google
       </Button>
     </form>

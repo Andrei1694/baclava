@@ -6,12 +6,17 @@ const mapStyle = new Map([
 function Button({
   children,
   onClick,
+  className,
   type = "button",
   style = "default",
   icon,
 }) {
   return (
-    <button type={type} onClick={onClick} className={mapStyle.get(style)}>
+    <button
+      type={type}
+      onClick={onClick}
+      className={`${className} ${mapStyle.get(style)}`}
+    >
       {icon && <img src={icon} className="ml-[12px] mr-[37.5px]" alt="icon" />}
       {children}
     </button>
