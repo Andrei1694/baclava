@@ -1,6 +1,7 @@
 import { useFormik } from "formik";
 import Button from "../components/Button";
 import Input from "../components/Input";
+import fb from "../../src/assets/fb.svg";
 
 function LoginForm() {
   const formik = useFormik({
@@ -17,7 +18,7 @@ function LoginForm() {
       <Input
         type="email"
         label="Email"
-        id='email'
+        id="email"
         name="email"
         className="mb-16"
         onChange={formik.handleChange}
@@ -33,7 +34,9 @@ function LoginForm() {
         value={formik.values.password}
       />
       <Button type="submit">Get Started</Button>
-      <Button style="social" type="submit">Continue with Google</Button>
+      <Button style="social" type="submit" icon={fb}>
+        Continue with Google
+      </Button>
     </form>
   );
 }

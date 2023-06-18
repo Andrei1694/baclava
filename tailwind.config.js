@@ -23,8 +23,8 @@ export default {
       },
       colors: {
         'primary': '#FFE202',
-        'gray':'#3A3A3A'
-        // 'grey': '#CBCBD4'
+        'gray': '#3A3A3A',
+        'greyLight': '#CBCBD4'
       },
       borderRadius: {
         'sm': '15px'
